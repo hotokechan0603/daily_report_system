@@ -33,7 +33,7 @@
 <input type="text" name="${AttributeConst.REP_TIME_IN.getValue()}"
 value="${report.timeIn}" />
 <br /><br />
-<label for="${AttributeConst.REP_TIME_OUT.setValue()">退勤時間</label><br />
+<label for="${AttributeConst.REP_TIME_OUT.setValue()}">退勤時間</label><br />
 <input type="text" name="${AttributeConst.REP_TIME_OUT.getValue()}"
 value="${report.timeOut}" />
 <br /><br />
