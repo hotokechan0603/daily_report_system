@@ -215,6 +215,9 @@ public class ReportAction extends ActionBase {
                 //日報データを更新する
                 List<String>errors = service.update(rv);
 
+                if (errors.size() > 0) {
+                    //更新中にエラーが発生した場合
+
                     putRequestScope(AttributeConst.TOKEN, getTokenId()); //CSRF対策用トークン
                     putRequestScope(AttributeConst.REPORT, rv); //入力された日報情報
                     putRequestScope(AttributeConst.ERR, errors); //エラーのリスト
@@ -233,5 +236,4 @@ public class ReportAction extends ActionBase {
                 }
             }
         }
-
-
+}
